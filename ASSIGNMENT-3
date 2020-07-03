@@ -1,0 +1,250 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMlrrBTv9nrqMNdBF6QvFel",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/321910305034/sameer/blob/master/ASSIGNMENT-3\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "7Z9LTYjNs56W",
+        "colab_type": "text"
+      },
+      "source": [
+        "1.Take two input from user and check whether they are equal or not"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "MFVWyxEsrJNC",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 72
+        },
+        "outputId": "1222df22-00fe-4534-e99b-567f666e3e67"
+      },
+      "source": [
+        "a=int(input(\"Enter the value of a\"))\n",
+        "b=int(input(\"Enter the value of b\"))\n",
+        "if a==b:\n",
+        "  print(\"Both are equal\")\n",
+        "else:\n",
+        "  print(\"Both are npt equal\")"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the value of a4\n",
+            "Enter the value of b6\n",
+            "Both are npt equal\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "XCvcwd3WujTB",
+        "colab_type": "text"
+      },
+      "source": [
+        "2.Take 3 inputs from user and check"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "kD-J-LNDtZVX",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 90
+        },
+        "outputId": "b53262d6-97bb-4c8c-b747-66ec28cf2ee5"
+      },
+      "source": [
+        "a=int(input(\"Enter the value of a\"))\n",
+        "b=int(input(\"Enter the value of b\"))\n",
+        "c=int(input(\"Enter the value of c\"))\n",
+        "if a==b and b==c:\n",
+        "   print(\"The entered value sare equal\")\n",
+        "else:\n",
+        "  if a==b or b==c or c==a:\n",
+        "    print(\"Any two entered values are equal\")\n",
+        "  else:\n",
+        "      print(\"Area are equal\")"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the value of a40\n",
+            "Enter the value of b50\n",
+            "Enter the value of c40\n",
+            "Any two entered values are equal\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "QG5qveoJv-PA",
+        "colab_type": "text"
+      },
+      "source": [
+        "3.Taketwo numbers and check whether the sum is greater than 5,less than 5 or equal to 5"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "JSGKujmfvPwX",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 72
+        },
+        "outputId": "46b3720b-9402-4c68-bc3d-29a5a5750b7d"
+      },
+      "source": [
+        "a=int(input(\"Enter the value of a\"))\n",
+        "b=int(input(\"Enter the value of b\"))\n",
+        "sum=a+b\n",
+        "if sum==5:\n",
+        "  print(\"sum is equal to 5\")\n",
+        "elif sum>5:\n",
+        "  print(\"Sum is greater than 5\")\n",
+        "else:\n",
+        "  print(\"sum is less than 5\")\n",
+        "    "
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the value of a6\n",
+            "Enter the value of b7\n",
+            "Sum is greater than 5\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "1f38ExgCwoMP",
+        "colab_type": "text"
+      },
+      "source": [
+        "4.Suppose passing marks of a subject is 35.Take input of marks from user and check whether it is greater than passing marks or not"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "2kQMsrN3wmKc",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "40a1d1cb-8f87-4989-af39-8881ddf3c976"
+      },
+      "source": [
+        "a=float(input(\"Enter the marks\"))\n",
+        "passmarks=35\n",
+        "if a>35:\n",
+        "  print(\"Greater tha passing marks\")\n",
+        "else:\n",
+        "  print(\"Less than passing marks\")"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the marks56\n",
+            "Greater tha passing marks\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "yQIjhwa3xoFi",
+        "colab_type": "text"
+      },
+      "source": [
+        "5.Write a python program max of three numbers"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "rAV9xSNIxlzw",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 90
+        },
+        "outputId": "b6d579f7-1904-4069-fd8a-8e5b82aa616e"
+      },
+      "source": [
+        "a=int(input(\"Enter the value of a\"))\n",
+        "b=int(input(\"Enter the value of b\"))\n",
+        "c=int(input(\"Enter the value of c\"))\n",
+        "if a>b:\n",
+        "  print(\"a is greater than b\")\n",
+        "elif b>c:\n",
+        "  print(\"b is greater than c\")\n",
+        "else:\n",
+        "  print(\"c is greater\")  "
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the value of a5\n",
+            "Enter the value of b6\n",
+            "Enter the value of c7\n",
+            "c is greater\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
