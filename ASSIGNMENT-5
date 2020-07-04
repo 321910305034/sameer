@@ -1,0 +1,450 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPlo8AA0/QRYdRXv2z+IJ/X",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/321910305034/sameer/blob/master/ASSIGNMENT-5\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Yz_yVoZ4Y-Ak",
+        "colab_type": "text"
+      },
+      "source": [
+        "1.Question"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "LH5fyayTXVk9",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "fdff8b5a-d767-4d33-92ab-c3a698d7e8cf"
+      },
+      "source": [
+        "def find_len(list1):\n",
+        "  length=len(list1)\n",
+        "  list1.sort()\n",
+        "  print(\"largest element is:\",list1[length-1])\n",
+        "  print(\"smallest elemet is:\",list1[0])\n",
+        "\n",
+        "list1=[12,4,2,10]\n",
+        "largest=find_len(list1) \n",
+        " "
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "largest element is: 12\n",
+            "smallest elemet is: 2\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "-8NjYoGiZUOe",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "M1g9QmQwabqv",
+        "colab_type": "text"
+      },
+      "source": [
+        "2.Question"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "koRNxWRqZWTo",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "08ba430d-45b4-4bbc-9708-965e96128314"
+      },
+      "source": [
+        "def remove(duplicate):\n",
+        "  final_list=[]\n",
+        "  for num in duplicate:\n",
+        "    final_list.append(num)\n",
+        "  return final_list\n",
+        "\n",
+        "duplicate=[2,4,10,5,20,4] \n",
+        "print(remove(duplicate))      "
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[2, 4, 10, 5, 20, 4]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "x6G4cCNKbTBR",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "uWW-dxuqbU_N",
+        "colab_type": "text"
+      },
+      "source": [
+        "3.Question"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "3ioD3q3BaggM",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "6d0875f9-d574-4a3f-bfdb-ec65657aba44"
+      },
+      "source": [
+        "def enquiry(list):\n",
+        "  if len(list1):\n",
+        "    return 0\n",
+        "  else:\n",
+        "    return 1\n",
+        "list1=[]\n",
+        "if enquiry(list1):\n",
+        "  print(\"the list is not empty\")\n",
+        "else:\n",
+        "  print(\"empty list\")  "
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "the list is not empty\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "i6tuecnkbbPp",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "kiEnjd_AcmQn",
+        "colab_type": "text"
+      },
+      "source": [
+        "4.Question"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "EoDtKWFzbbuz",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "c1329847-ee6b-4bb9-89b6-7c1f0ddde739"
+      },
+      "source": [
+        "def cloning(li1):\n",
+        "  li_copy=li1[:]\n",
+        "  return li_copy\n",
+        "\n",
+        "li1=[4,8,10,15,18]\n",
+        "li2=cloning(li1)\n",
+        "print(\"original list:\",li1)\n",
+        "print(\"after cloning:\",li2)  "
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "original list: [4, 8, 10, 15, 18]\n",
+            "after cloning: [4, 8, 10, 15, 18]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "y-GA9Qw9cjfD",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "TKJDpQTRdRnl",
+        "colab_type": "text"
+      },
+      "source": [
+        "5.Question"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "-JcOUstucj4W",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "372b540e-295c-4527-b207-c35e96177dd9"
+      },
+      "source": [
+        "color=[\"red\",\"green\",\"white\",\"black\",\"pink\",\"yellow\"]\n",
+        "color=[x for (i,x) in enumerate(color) if i not in (0,4,5)]\n",
+        "print(color)"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['green', 'white', 'black']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "-NnFds89dV4W",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "C1TANXCtd33o",
+        "colab_type": "text"
+      },
+      "source": [
+        "6.Question"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "7WNZBu4QdWWR",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "05652dcd-a477-466d-8017-4d9735a2022d"
+      },
+      "source": [
+        "list1=[10,21,4,45,66,93]\n",
+        "\n",
+        "for num in list1:\n",
+        "\n",
+        "  if num % 2==0:\n",
+        "    print(num,end=\" \")"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "10 4 66 "
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "AyaBo6ohd697",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "bZ8iq80dd9E9",
+        "colab_type": "text"
+      },
+      "source": [
+        "7.Question"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "msLTE8sEd7QG",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "6d39e544-0dac-4fd4-e85b-f05905730c02"
+      },
+      "source": [
+        "my_list=['p','r','o','b','e']\n",
+        "\n",
+        "print(my_list[-1])\n",
+        "\n",
+        "print(my_list[-5])\n"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "e\n",
+            "p\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "wnfpRpg5eiEF",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6WPF1BC5ekcS",
+        "colab_type": "text"
+      },
+      "source": [
+        "8.Question"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "7QlXlqyxeifm",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "ae675ceb-8bdb-4187-f126-7a4e196398c6"
+      },
+      "source": [
+        "A={'a','b','c','d'}\n",
+        "B={'c','f','g'}\n",
+        "\n",
+        "print(A.difference(B))\n",
+        "\n",
+        "print(B.difference(A))"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{'b', 'd', 'a'}\n",
+            "{'f', 'g'}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
