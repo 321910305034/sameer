@@ -1,0 +1,262 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOOMfTPcmk7igYV1ZM8q//s",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/321910305034/sameer/blob/master/ASSIGNMENT-4\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "-tKM0HFfzwAU",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "eeee9c2f-4127-413d-f680-8b71c8e8dfb2"
+      },
+      "source": [
+        "import cmath\n",
+        "\n",
+        "num=1+2j\n",
+        "\n",
+        "num_sqrt=cmath.sqrt(num)\n",
+        "print(\"The square root of {0} is {1:0.3f}+{2:0.3f}j\".format(num,num_sqrt.real,num_sqrt.imag))"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "The square root of (1+2j) is 1.272+0.786j\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Y1xT2mCT3iTV",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "1c144e47-b414-4270-cf15-a5d09f213e69"
+      },
+      "source": [
+        "num=float(input(\"Enter a number\"))\n",
+        "if num>0:\n",
+        "  print(\"Positive number\")\n",
+        "elif num==0:\n",
+        "  print(\"Zero\")\n",
+        "else:\n",
+        "  print(\"Negative number\") \n"
+      ],
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a number25\n",
+            "Positive number\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "nIrBdn2y4fS1",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "e43dde17-44b5-4ddf-81d6-fc15c20408b7"
+      },
+      "source": [
+        "Year =int(input(\"Enter a year:\"))\n",
+        "\n",
+        "if(Year%4)==0:\n",
+        " if(Year%100)==0:\n",
+        "  if(Year%400)==0:\n",
+        "    print(\"{0} is a leap year\".format(Year))\n",
+        "  else:\n",
+        "    print(\"{0} is not a leap year\".format(Year))\n",
+        " else:\n",
+        "      print(\"{0} is a leap year\".format(Year))\n",
+        "else:\n",
+        "      print(\"{0} is not a leap year\".format(Year))    "
+      ],
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a year:2000\n",
+            "2000 is a leap year\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xrriO7L5OKgC",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 181
+        },
+        "outputId": "1e6a8f7f-c1b4-4af5-bbe9-6c0bf7c28cbe"
+      },
+      "source": [
+        "nterms=int(input(\"How many terms\"))\n",
+        "n1,n2=0,1\n",
+        "count=0\n",
+        "\n",
+        "if nterms<=0:\n",
+        "  print(\"Enter a positive integer\")\n",
+        "elif nterms==1:\n",
+        "  print(\"Fibonacci sequence upto\",nterms,\":\")\n",
+        "  print(n1) \n",
+        "else:\n",
+        "  print(\"Fibonacci sequence\")\n",
+        "  while count<nterms:\n",
+        "    print(n1)   \n",
+        "    nth=n1+n2\n",
+        "\n",
+        "    n1=n2\n",
+        "    n2=nth\n",
+        "    count+=1"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "How many terms7\n",
+            "Fibonacci sequence\n",
+            "0\n",
+            "1\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "5\n",
+            "8\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "IJG5uSaEUuVN",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "20a19ebe-1b1a-45d5-ddd1-2144f96dfae3"
+      },
+      "source": [
+        "num=int(input(\"Enter a number\"))\n",
+        "sum=0\n",
+        "\n",
+        "temp=num\n",
+        "while temp>0:\n",
+        "  digit=temp%10\n",
+        "  sum+=digit**3\n",
+        "  temp//=10\n",
+        "if num==sum:\n",
+        "  print(num,\"is a Armstrong number\")\n",
+        "else:\n",
+        "  print(num,\"is not a Armstrong number\")    "
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a number663\n",
+            "663 is not a Armstrong number\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "XFFzousAVydM",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 181
+        },
+        "outputId": "9828553b-43d1-47ee-c002-6b7197d2757d"
+      },
+      "source": [
+        "lower=100\n",
+        "upper=2000\n",
+        "\n",
+        "for num in range(lower,upper+1):\n",
+        "\n",
+        "  order=len(str(num))\n",
+        "  sum=0\n",
+        "\n",
+        "  temp=num\n",
+        "  while temp>0:\n",
+        "    digit=temp%10\n",
+        "    sum+=digit**order\n",
+        "    temp//=10\n",
+        "\n",
+        "    if num==sum:\n",
+        "      print(num)"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "125\n",
+            "153\n",
+            "216\n",
+            "370\n",
+            "371\n",
+            "407\n",
+            "729\n",
+            "1296\n",
+            "1634\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
